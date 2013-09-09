@@ -2,7 +2,7 @@
 (->
   @initNavigation = ->
     createMarkup()
-    $(window).scroll(calculateNavPosition)
+    $('div.main').scroll(calculateNavPosition)
     $('nav a').click(-> scrollToId($(this)))
 
   createMarkup = ->
@@ -21,7 +21,7 @@
 
   calculateNavPosition = -> if scrollPositionBelowNav() then fixNavPosition() else releaseNavPosition()
 
-  scrollPositionBelowNav = -> $(window).scrollTop() > $('header').outerHeight()
+  scrollPositionBelowNav = -> $('div.main').scrollTop() > $('header').outerHeight()
 
   fixNavPosition = -> $('nav').css(fixedNavStyle()).next().css('margin-top','100px')
 

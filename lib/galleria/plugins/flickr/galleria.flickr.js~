@@ -41,7 +41,7 @@ Galleria.Flickr = function( api_key ) {
         max: 30,                       // photos to return
         imageSize: 'medium',           // photo size ( thumb,small,medium,big,original )
         thumbSize: 'thumb',            // thumbnail size ( thumb,small,medium,big,original )
-        sort: 'date-posted-desc',  // sort option ( date-posted-asc, date-posted-desc, date-taken-asc, date-taken-desc, interestingness-desc, interestingness-asc, relevance )
+        sort: 'interestingness-desc',  // sort option ( date-posted-asc, date-posted-desc, date-taken-asc, date-taken-desc, interestingness-desc, interestingness-asc, relevance )
         description: false,            // set this to true to get description as caption
         complete: function(){},        // callback to be called inside the Galleria.prototype.load
         backlink: false                // set this to true if you want to pass a link back to the original image
