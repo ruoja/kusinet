@@ -2,7 +2,7 @@
 (->
   @initNavigation = ->
     createMarkup()
-    $(window).scroll(calculateNavPosition)
+    $(document).scroll(calculateNavPosition)
     $('nav a').click(-> scrollToId($(this)))
 
   createMarkup = ->
@@ -23,18 +23,15 @@
 
   scrollPositionBelowNav = -> $(window).scrollTop() > $('header').outerHeight()
 
-  fixNavPosition = -> $('nav').css(fixedNavStyle()).next().css('margin-top','100px')
-
-  fixedNavStyle = ->
-    'class': 'fixed'
-    'top': '0'
-    'left': $('header').offset().left
+  fixNavPosition = -> 
+    $('nav').addClass('fixed').next().css('margin-top','100px')
+    $('nav').css('left', $('header').offset().left)
 
   releaseNavPosition = -> $('nav').removeClass('fixed').next().css('margin-top','0')
 
   scrollToId = (elem) -> $('html,body').animate(scrollTop: topOffsetById(elem.attr('class')), 'slow')
 
-  topOffsetById = (id) -> $(".#{id}").offset().top - 98
+  topOffsetById = (id) -> $("section.#{id}").offset().top - 98
 
   return this
 ).apply(Navigation)
