@@ -2,11 +2,13 @@
 (->
   @initNavigation = ->
     createMarkup()
-    $(document).scroll(calculateNavPosition)
+    $(window).scroll(calculateNavPosition)
     $('nav a').click(-> scrollToId($(this)))
 
   createMarkup = ->
     navElements = [
+      { section: 'header', title: 'pintaan', link: '#' }
+      { section: 'news', title: 'uutiset', link: '#' }
       { section: 'members', title: 'jäsenet', link: '#' }
       { section: 'spots', title: 'kohteet', link: '#' }
       { section: 'gallery', title: 'kuvia', link: '#' }
@@ -29,7 +31,7 @@
 
   releaseNavPosition = -> $('nav').removeClass('fixed').next().css('margin-top','0')
 
-  scrollToId = (elem) -> $('html,body').animate(scrollTop: topOffsetById(elem.attr('class')), 'slow')
+  scrollToId = (elem) -> if elem.attr('class') == 'header' then $('html, body').animate(scrollTop: 0, 'slow') else $('html, body').animate(scrollTop: topOffsetById(elem.attr('class')), 'slow')
 
   topOffsetById = (id) -> $("section.#{id}").offset().top - 98
 
