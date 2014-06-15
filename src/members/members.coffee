@@ -6,11 +6,11 @@
   createMarkup = ->
     diveCards = [
       { image: 'img/mane.jpg', name: 'mane<br />presidentti', location: 'siilinjärvi', courses: ['CMAS* P1 2006'] }
-      { image: 'img/mika.jpg', name: 'mika<br />kusipääministeri', location: 'siilinjärvi', courses: ['CMAS* P1 1991', 'CMAS Nx1'] }
-      { image: 'img/petri.jpg', name: 'petri', location: 'siilinjärvi', courses: ['CMAS** P2 2003', 'CMAS Nx1'] }
+      { image: 'img/mika.jpg', name: 'mika<br />kusipääministeri', location: 'siilinjärvi', courses: ['CMAS* P1 1991', 'CMAS Nx1 2013', 'CMAS** P2 2013', 'CMAS Trimix Gasblender 2014', 'IANTD Cavern Diver 2014', 'IANTD Adv.Rec.Trimix Diver 2014'] }
+      { image: 'img/petri.jpg', name: 'petri', location: 'siilinjärvi', courses: ['CMAS* P1 2003', 'CMAS** P2 2004', 'CMAS Nx1 2013', 'IANTD Cavern Diver 2014', 'IANTD Adv.Rec.Trimix Diver 2014'] }
       { image: 'img/tuomas.jpg', name: 'tuomas', location: 'göttingen, saksa', courses: ['CMAS* P1 2006', 'ANDI CSU 2009', 'ANDI TSD 2012', 'CMAS NX**'] }
-      { image: 'img/jani.jpg', name: 'jani', location: 'helsinki', courses: ['CMAS*** P3 2009', 'PADI EANx 2011'] }
-      { image: 'img/niko.jpg', name: 'niko', location: 'helsinki', courses: ['CMAS** P2 2011', 'CMAS Nx1 2011'] }
+      { image: 'img/jani.jpg', name: 'jani', location: 'helsinki', courses: ['CMAS* P1 2006', 'CMAS** P2 2008', 'CMAS*** P3 2009', 'PADI EANx 2011'] }
+      { image: 'img/niko.jpg', name: 'niko', location: 'helsinki', courses: ['CMAS* P1 2009', 'CMAS** P2 2011', 'CMAS Nx1 2011'] }
     ]
 
     diveCardTpl = '<div class="diveCard">
