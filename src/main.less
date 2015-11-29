@@ -5,27 +5,27 @@
 @import "gallery/gallery";
 
 @text-color: #97DEF8;
-@main-width: 970px;
+@main-width: 65%;
 @font-family: Trebuchet MS;
 @divider: url(../img/dividr.png);
 @background: url(../img/mainbg.jpg);
 
 .main { background-image: @background; font-family: @font-family;
-  header { .border-both-sides(1px); width: @main-width; margin: auto; color: @text-color;
-    .tagline { background-image: url(../img/tagline2.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 470px; border-bottom: 1px solid #000000;
-      img { left: 30px; position: relative; top: 30px; }
-    }
-  }
+        header { .border-both-sides(1px); width: @main-width; margin: auto; color: @text-color;
+                 .tagline { background-image: url(../img/tagline2.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 20em; border-bottom: 1px solid #000000;
+                            img { position: relative; left: 1em; top: 1em; }
+                 }
+        }
 
-  section { .border-both-sides(1px); width: 950px; margin: auto; padding: 40px 10px; color: @text-color;
-    min-height: 100px; background: @divider no-repeat scroll 50% 0 transparent; overflow: hidden;
-    .title { font-size: 20pt; padding-bottom: 20px; text-align: center; }
-    }
+        section { .border-both-sides(1px); width: @main-width; margin: auto; padding: 3em 0em; color: @text-color;
+                  min-height: 100px; background: @divider no-repeat scroll 50% 0 transparent; overflow: hidden;
+                  .title { font-size: 20pt; padding-bottom: 1em; text-align: center; }
+        }
 
-  footer { width: @main-width; margin: auto; border: 1px solid #000000; color: @text-color;
-    img { opacity: 0.2; }
-  }
+        footer { width: @main-width; margin: auto; border: 1px solid #000000; color: @text-color;
+                 img { opacity: 0.2; }
+        }
 
-  
+        section.spots { text-align: center; }
 
 }

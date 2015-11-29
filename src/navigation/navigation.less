@@ -1,11 +1,11 @@
 nav { .border-both-sides(1px); background-image: @background; padding-bottom: 40px; padding-top: 40px;
-  text-align: center; width: @main-width; margin: auto; color: #97DEF8; z-index: 99999;
-  li { display: inline; padding: 20px; border-right: 1px solid #000000;
-    a { font-size: 18px; text-decoration: none; text-transform: uppercase; color: @text-color;
-      &:hover { color: #085258; }
-    }
-    &:last-child { border-right: none; }
-  }
+      text-align: center; width: @main-width; margin: auto; color: #97DEF8; z-index: 99999;
+      li { display: inline; padding: 20px; border-right: 1px solid #000000;
+           a { font-size: 18px; text-decoration: none; text-transform: uppercase; color: @text-color;
+               &:hover { color: #085258; }
+           }
+           &:last-child { border-right: none; }
+      }
 }
 
 nav.fixed { position: fixed; top: 0; background-image: @background }
