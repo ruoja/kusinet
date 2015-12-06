@@ -8,24 +8,27 @@
         <script type="text/javascript" src="lib/underscore/underscore-1.5.1.min.js"></script>
         <script type="text/javascript" src="lib/jquery/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="lib/jquery/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="lib/galleria/galleria-1.2.9.min.js"></script>
-        <script type="text/javascript" src="lib/galleria/plugins/flickr/galleria.flickr.js"></script>
+        <script type="text/javascript" src="lib/galleria/galleria-1.4.2.min.js"></script>
+        <script type="text/javascript" src="lib/galleria/plugins/flickr/galleria.flickr.min.js"></script>
         <script type="text/javascript" src="js/ks.js"></script>
         <title>Kusisukat</title>
     </head>
     <body>
         <div class="main">
+
             <header>
                 <div class="tagline"><img alt="Kusisukat Logo" src="img/logo.gif"></div>
             </header>
+
             <nav></nav>
+
             <section class="news">
                 <div class="title"><h3>UUTISET</h3></div>
                 <div style="text-align: center">
                     <a class="twitter-timeline" data-dnt="true" data-chrome="transparent" height="500" lang="FI" href="https://twitter.com/kusisukat" data-widget-id="436128792856104960">Twiittejä käyttäjältä @kusisukat</a>
                 </div>
 
-                <script>!function(d, s, id) {
+                <script>!function (d, s, id) {
                         var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                         if (!d.getElementById(id)) {
                             js = d.createElement(s);
@@ -36,17 +39,21 @@
                     }(document, "script", "twitter-wjs");</script>
 
             </section>
+
             <section class="members">
                 <div class="title"><h3>JÄSENET</h3></div>
             </section>
+
             <section class="spots">
                 <div class="title"><h3>KOHTEET</h3></div>
-                <iframe src="http://mapsengine.google.com/map/embed?mid=zY4DG2fROCv8.k5-0v3O5J1P0" width="972" height="600"></iframe>
+                <iframe src="http://mapsengine.google.com/map/embed?mid=zY4DG2fROCv8.k5-0v3O5J1P0" width="1038" height="600"></iframe>
             </section>
+
             <section class="gallery">
                 <div class="title"><h3>KUVIA</h3></div>
                 <div class="galleria"></div>
             </section>
+
             <footer><img src="img/cthulhu.jpg"></footer>   
         </div>
 
@@ -56,7 +63,7 @@
             _gaq.push(['_setAccount', 'UA-48238202-1']);
             _gaq.push(['_trackPageview']);
 
-            (function() {
+            (function () {
                 var ga = document.createElement('script');
                 ga.type = 'text/javascript';
                 ga.async = true;
